@@ -1,0 +1,189 @@
+
+  body {
+    margin: 0;
+    background-color: #971818;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+  }
+
+  header {
+    padding: 40px 20px 20px;
+  }
+
+  header h1 {
+    color: red;
+    font-size: 64px;
+    margin: 0;
+  }
+
+  header p {
+    color: #0588f4;
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    margin: 10px 0 0;
+  }
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.card {
+  background: linear-gradient(160deg, #c40000, #0588f4);
+  border-radius: 12px;
+  padding: 40px 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-size: 34px;
+  margin: 0;
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+a.card {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #0588f4;
+  color: white;
+  font-family: 'Bangers', cursive;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.back:hover {
+  background: #c40000;
+  transform: scale(1.1);
+}
+.trailer iframe {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border: 3px solid #0588f4;
+  border-radius: 12px;
+}
+#locate {
+  background: #0588f4;
+  color: white;
+  border: 3px solid white;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-family: 'Bangers', cursive;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#locate:hover {
+  background: #c40000;
+}
+.hint {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 8px 0 0;
+}
+
+/* Alasivun otsikko: tilaa Back-napille */
+body:has(.back) header {
+  padding-top: 90px;
+}
+
+section h2 {
+  font-size: 40px;
+  margin: 30px 0 20px;
+}
+
+/* Miles Morales -kortit: Spider-Verse-värit */
+.card.miles {
+  background: linear-gradient(160deg, #c40000, #6a00c9);
+}
+
+.soon {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: #2a0a0a;
+  border: 3px dashed #0588f4;
+  border-radius: 12px;
+  font-family: 'Bangers', cursive;
+  font-size: 28px;
+  color: #0588f4;
+}
+
+/* Näyttelijälista */
+.cast ul {
+  list-style: none;
+  padding: 0 20px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.cast li {
+  background: rgba(0, 0, 0, 0.3);
+  border-left: 4px solid #0588f4;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.cast strong {
+  display: block;
+  font-family: 'Bangers', cursive;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.cast span {
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+#watch-result {
+  max-width: 600px;
+  margin: 16px auto 0;
+  font-size: 18px;
+}
+
+.info {
+  padding-bottom: 20px;
+}
+
+#watch-result a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffd166;
+  font-weight: bold;
+}
